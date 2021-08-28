@@ -1,0 +1,17 @@
+elixir 1.11.0-otp-23
+erlang 23.1.1
+
+lib/test_dialyzer.ex:15:no_return
+Function hello/0 has no local return.
+________________________________________________________________________________
+lib/test_dialyzer.ex:16:call
+The function call will not succeed.
+
+System.system_time(:seconds)
+
+breaks the contract
+(time_unit()) :: integer()
+
+________________________________________________________________________________
+done (warnings were emitted)
+Halting VM with exit status 2
